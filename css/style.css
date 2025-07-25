@@ -929,8 +929,8 @@ h3.my-profession {
     .about .about-content .skills,
     .about .about-content .personal-info
     {
-        flex: 0 0 33.33%;
-        max-width: 25%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
   .map-container,
   .contact .contact-form 
