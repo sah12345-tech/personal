@@ -864,6 +864,7 @@ h3.my-profession {
     .aside
     {
         left: -270px;
+        z-index: 999;
     }
     .aside.open
     {
@@ -911,6 +912,11 @@ h3.my-profession {
     {
         display: none;
     }
+    .section
+    {
+        position: fixed;
+        left: 270px;    
+    }
 }
 @media (max-width:767px)
 {
@@ -923,9 +929,41 @@ h3.my-profession {
     .about .about-content .skills,
     .about .about-content .personal-info
     {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 33.33%;
+        max-width: 25%;
     }
-} 
+  .map-container,
+  .contact .contact-form 
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .map-container iframe 
+  {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-info p,
+  .about .about-content .about-text p,
+  .service .service-item .service-item-inner p {
+    font-size: 14px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+
 
 
