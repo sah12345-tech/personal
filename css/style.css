@@ -1067,3 +1067,59 @@ h3.my-profession {
   }
 }
 
+@media (max-width: 576px) {
+  /* About section adjustments for smartphones/iPhones */
+
+  .about .about-content,
+  .about .about-content .about-text,
+  .about .about-content .personal-info,
+  .about .about-content .skills,
+  .about .about-content .experience,
+  .about .about-content .education {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .about-content .skills {
+    margin-top: 30px;
+  }
+
+  .about .about-content .skills .skill-item h5 {
+    font-size: 15px;
+  }
+
+  .about .about-content .timeline .timeline-title {
+    font-size: 16px;
+  }
+
+  .about .about-content .timeline .timeline-text,
+  .about .about-content .about-text p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .about .about-content h3.title,
+  .about .about-content .about-text h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .about .about-content .personal-info .buttons {
+    text-align: center;
+  }
+
+  .about .about-content .personal-info .buttons .btn {
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+
+
