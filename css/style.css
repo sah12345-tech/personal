@@ -929,8 +929,8 @@ h3.my-profession {
     .about .about-content .skills,
     .about .about-content .personal-info
     {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 33.33%;
+        max-width: 25%;
     }
   .map-container,
   .contact .contact-form 
@@ -964,6 +964,106 @@ h3.my-profession {
   }
 }
 
+/* ==== Mobile-first responsive design for all smartphones and iPhones ==== */
+@media (max-width: 990px) {
+  /* Section adjustments */
+  .section {
+    left: 0;
+    padding: 10px;
+  }
 
+  /* Home section */
+  .home-info,
+  .home-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 
+  .home-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .home-img {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .home-img img {
+    height: auto;
+    max-height: 300px;
+    width: auto;
+  }
+
+  /* Typography */
+  .section-title h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  h3.hello,
+  h3.my-profession {
+    font-size: 20px;
+  }
+
+  /* Button style */
+  .btn {
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+
+  /* Service items */
+  .service .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Portfolio items */
+  .portfolio .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Contact info */
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Contact form */
+  .contact .contact-form .col-6,
+  .contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact .contact-form .form-item .form-control {
+    height: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Timeline fixes */
+  .timeline-date-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-date,
+  .timeline-marks {
+    font-size: 13px;
+  }
+
+  /* Map */
+  .map-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
 
